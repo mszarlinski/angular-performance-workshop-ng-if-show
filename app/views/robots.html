@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <span>Make robots</span>
+        </div>
+        <div class="panel-body">
+            <input type="number" ng-model="vm.robotsCount"/>
+            <button type='button' ng-click="vm.generateRobots()">Make robots!</button>
+
+            <button type='button' ng-click="vm.toggleRobots()">Toggle robots</button>
+        </div>
+    </div>
+    <div ng-show="vm.showRobots">
+        <bsl-robot ng-repeat="robo in vm.robots track by ::robo.name" robot="::robo"></bsl-robot>
+    </div>
+</div>
