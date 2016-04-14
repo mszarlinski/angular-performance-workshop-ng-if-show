@@ -16,6 +16,7 @@ angular.module('robotsModule')
             for (var i = 0; i < vm.robotsCount; i++) {
                 vm.robots.push(new BslRobot());
             }
+            console.log('Generation completed');
         };
 
         this.toggleRobots = function () {
