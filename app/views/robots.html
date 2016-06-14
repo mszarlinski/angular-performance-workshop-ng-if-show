@@ -10,7 +10,7 @@
             <button type='button' ng-click="vm.toggleRobots()">Toggle robots</button>
         </div>
     </div>
-    <div ng-show="vm.showRobots">
+    <div ng-if="vm.showRobots">
         <bsl-robot ng-repeat="robo in vm.robots track by ::robo.name" robot="::robo"></bsl-robot>
     </div>
 </div>

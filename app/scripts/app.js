@@ -15,7 +15,10 @@ angular
         'angularStats',
         'robotsModule'
     ])
-    .config(function ($routeProvider) {
+    .config(function ($routeProvider, $compileProvider, $logProvider) {
+        $compileProvider.debugInfoEnabled(false);
+        $logProvider.debugEnabled(false);
+
         $routeProvider
             .when('/', {
                 templateUrl: 'views/main.html',
