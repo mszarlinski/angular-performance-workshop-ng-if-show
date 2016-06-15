@@ -16,8 +16,8 @@ angular
         'robotsModule'
     ])
     .config(function ($routeProvider, $compileProvider, $logProvider) {
-        $compileProvider.debugInfoEnabled(false);
-        $logProvider.debugEnabled(false);
+        // $compileProvider.debugInfoEnabled(false);
+        // $logProvider.debugEnabled(false);
 
         $routeProvider
             .when('/', {
